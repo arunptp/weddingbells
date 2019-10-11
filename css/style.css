@@ -178,10 +178,10 @@
 
 
  .btn1 {
-   border: 2px solid red;
+   border: 0.5px solid white;
    background-color: white;
    color: red;
-   padding: 14px 28px;
+   padding: 8px 20px;
    font-size: 16px;
    cursor: pointer;
  }
@@ -190,7 +190,7 @@
      font-family: $accent-font;
      font-weight: 300;
      font-size: 25px;
-     color: #F69D52;
+     color: red;
      vertical-align: top;
      margin-left: -8px;
      font-style: normal;
@@ -8664,7 +8664,7 @@ h5,
         left: -150px;
         content: '';
         width: 130px;
-        height: 0px;
+        height: 2px;
         background: #fff; }
       .video-hero .text .subheading:after {
         position: absolute;
@@ -8839,10 +8839,10 @@ textarea.form-control {
   z-index: 0; }
   .ftco-about .wrap:before {
     position: absolute;
-    top: 40px;
-    left: 20px;
-    right: 20px;
-    bottom: 40px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
     content: '';
     border: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 2;
@@ -8851,10 +8851,10 @@ textarea.form-control {
     transform: rotate(-0.5deg); }
   .ftco-about .wrap:after {
     position: absolute;
-    top: 40px;
-    left: 20px;
-    right: 20px;
-    bottom: 40px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
     content: '';
     border: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 1;
@@ -8870,6 +8870,7 @@ textarea.form-control {
   margin-top: 0px;
   padding:0px;
   display: block;
+  color: black;
   text-transform: uppercase;
   font-family: "Libre Caslon Text", serif; }
 
