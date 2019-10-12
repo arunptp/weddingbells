@@ -3,7 +3,7 @@
  	easing: 'slide'
  });
 
-(function($) {
+jQuery(document).ready(function( $ ) {
 
 	"use strict";
 
@@ -264,6 +264,26 @@
 	};
 	contentWayPoint();
 
+
+  // Gallery carousel (uses the Owl Carousel library)
+  $(".gallery-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    center:true,
+    responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
+    }
+  });
+
+  // Initialize Venobox
+  $('.venobox').venobox({
+    bgcolor: '',
+    overlayColor: 'rgba(6, 12, 34, 0.85)',
+    closeBackground: '',
+    closeColor: '#fff'
+  });
+
+
 	// magnific popup
 	$('.image-popup').magnificPopup({
     type: 'image',
@@ -303,7 +323,7 @@
 
 	function makeTimer() {
 
-		var endTime = new Date("26 December 2019 11:00:00 GMT+05:30");			
+		var endTime = new Date("26 December 2019 11:00:00 GMT+05:30");
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -329,4 +349,4 @@
 
 setInterval(function() { makeTimer(); }, 1000);
 
-})(jQuery);
+});
