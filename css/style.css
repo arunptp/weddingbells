@@ -14,8 +14,7 @@
    overflow: hidden;
  }
 
- #gallery .owl-nav,
- #gallery .owl-dots {
+ #gallery .owl-nav {
    margin-top: 25px;
    text-align: center;
  }
@@ -25,6 +24,7 @@
    border-right: 2px solid #fff;
  }
 
+/*
  #gallery .owl-dot {
    display: inline-block;
    margin: 0 5px;
@@ -39,9 +39,11 @@
    border-right: #ddd;
  }
 
+
  #gallery .owl-dot.active {
    background-color: #f82249;
  }
+*/
 
  #gallery .gallery-carousel .owl-stage-outer {
    overflow: visible;
