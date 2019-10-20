@@ -5,6 +5,14 @@
 
 jQuery(document).ready(function( $ ) {
 
+  jQuery(".player").mb_YTPlayer();
+
+  sizeTheVideo();
+  $(window).resize(function(){
+    sizeTheVideo();
+  });
+
+
 	"use strict";
 
 	$(window).stellar({
@@ -268,7 +276,7 @@ jQuery(document).ready(function( $ ) {
   // Gallery carousel (uses the Owl Carousel library)
   $(".gallery-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
     center:true,
     responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
@@ -315,10 +323,6 @@ jQuery(document).ready(function( $ ) {
     fixedContentPos: false
   });
 
-  var bgVideo = function() {
-		$('.player').mb_YTPlayer();
-	};
-	bgVideo();
 
 
 	function makeTimer() {
@@ -350,3 +354,18 @@ jQuery(document).ready(function( $ ) {
 setInterval(function() { makeTimer(); }, 1000);
 
 });
+
+function sizeTheVideo(){
+  // - 1.78 is the aspect ratio of the video
+// - This will work if your video is 1920 x 1080
+// - To find this value divide the video's native width by the height eg 1920/1080 = 1.78
+  var aspectRatio = 1.78;
+
+    var video = $('#videoWithJs iframe');
+    var videoHeight = video.outerHeight();
+    var newWidth = videoHeight*aspectRatio;
+		var halfNewWidth = newWidth/2;
+
+  //Define the new width and centrally align the iframe
+  video.css({"width":newWidth+"px","left":"50%","margin-left":"-"+halfNewWidth+"px"});
+}
