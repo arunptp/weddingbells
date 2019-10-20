@@ -5,6 +5,35 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
+ .btn1 {
+   border: 1px solid #f67e7d;
+   background-color: white;
+   color: red;
+   padding: 8px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   margin-right: 2px;
+   margin-top: 2px;
+   margin-btm:2px;
+   margin-left:2px;
+   border-radius: 12px;
+ }
+
+ i {
+     font-family: $accent-font;
+     font-weight: 300;
+     font-size: 25px;
+     color: #f67e7d;
+     vertical-align: top;
+     margin-left: -8px;
+     font-style: normal;
+   }
+
+
+
+
+
  /*--------------------------------------------------------------
  # Gallery Section
  --------------------------------------------------------------*/
@@ -213,24 +242,6 @@
  }
 
 
- .btn1 {
-   border: 0.5px solid white;
-   background-color: white;
-   color: red;
-   padding: 8px 20px;
-   font-size: 16px;
-   cursor: pointer;
- }
-
- i {
-     font-family: $accent-font;
-     font-weight: 300;
-     font-size: 25px;
-     color: red;
-     vertical-align: top;
-     margin-left: -8px;
-     font-style: normal;
-   }
 
 
 
