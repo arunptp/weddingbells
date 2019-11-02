@@ -7,9 +7,6 @@ jQuery(document).ready(function( $ ) {
 
   jQuery(".player").mb_YTPlayer();
 
-
-
-
 	"use strict";
 
 	$(window).stellar({

@@ -5,6 +5,37 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+/*---------------------------------
+Scroll down arrow
+------------------------ */
+
+ .arr { color: #eee; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 0 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*
+Book Uber and Ola button Styling
+*/
 
  .btn1 {
    border: 1px solid #f67e7d;
@@ -32,11 +63,9 @@
 
 
 
-
-
- /*--------------------------------------------------------------
+ /*
  # Gallery Section
- --------------------------------------------------------------*/
+*/
 
  #gallery {
    padding: 60px;
@@ -88,22 +117,9 @@
  }
 
 
-
-
-
-
-
-
-
-
  /*--------------------------------------------------------------
  # Intro Section
  --------------------------------------------------------------*/
-
-
-
-
-
 
  #intro {
     width: 100%;
@@ -240,8 +256,6 @@
      opacity: 0;
    }
  }
-
-
 
 
 
